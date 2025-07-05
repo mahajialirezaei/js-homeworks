@@ -1,7 +1,10 @@
 <html>
     <head>
         <script>
-
+            var date = new Date()
+            setInterval(function(){
+                document.getElementById('clock').innerText = date.toLocaleTimeString()
+            }, 1000)
         </script>
     </head>
     <body>
